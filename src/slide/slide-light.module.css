@@ -1,0 +1,75 @@
+.slide {
+  position: absolute;
+  top: 85px;
+  visibility: hidden;
+  left: 340px;
+  width: 1240px;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 70px;
+  background: var(--slide);
+}
+
+.glow {
+  position: absolute;
+  top: 16px;
+  left: 65px;
+  width: 507px;
+  height: 505px;
+  border-radius: 50%;
+  background: #f5d4ac;
+  opacity: 0.6;
+  filter: blur(334px);
+}
+
+.girl {
+  position: absolute;
+  top: 0;
+  left: 128px;
+  width: 669px;
+  height: 800px;
+}
+
+.star {
+  position: absolute;
+  top: 35px;
+  left: 43px;
+  width: 180px;
+  height: 180px;
+}
+
+.title {
+  position: absolute;
+  top: 272px;
+  left: 846px;
+  width: 246px;
+  margin: 0;
+  color: #fff;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-size: 60.45px;
+  font-weight: 600;
+  line-height: 1.01;
+  letter-spacing: -0.01em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  position: absolute;
+  top: 428px;
+  left: 797px;
+  width: 344px;
+  margin: 0;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.weight {
+  top: 567px;
+  left: 906px;
+}

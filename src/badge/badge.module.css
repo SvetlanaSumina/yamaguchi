@@ -1,0 +1,33 @@
+.badge {
+  position: absolute;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b4b4b;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  background: #fff;
+  box-shadow: 15.63px 13.17px 24.68px -4.94px rgba(65, 60, 57, 0.21);
+}
+
+.l {
+  padding: 9.91px 29.74px;
+  border-radius: 49.57px;
+  font-size: 53.03px;
+  line-height: 1.01;
+}
+
+.s {
+  padding: 10.43px 27.87px;
+  border-radius: 33.58px;
+  font-size: 27.73px;
+  line-height: 1.27;
+}
+
+.dark {
+  color: #fff;
+  background: #4b4b4b;
+}

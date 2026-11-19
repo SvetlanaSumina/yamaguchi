@@ -1,0 +1,58 @@
+.slide {
+  position: absolute;
+  top: 85px;
+  visibility: hidden;
+  left: 340px;
+  width: 1240px;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 70px;
+  background: var(--slide);
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  width: 1240px;
+  height: 800px;
+}
+
+.title {
+  position: absolute;
+  top: 53px;
+  right: 67px;
+  width: max-content;
+  margin: 0;
+  color: #4b4b4b;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-size: 45.35px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.note {
+  position: absolute;
+  top: 177px;
+  right: 67px;
+  width: max-content;
+  margin: 0;
+  color: #737373;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-size: 34.87px;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.star {
+  position: absolute;
+  top: 582px;
+  left: 1014px;
+  width: 180px;
+  height: 180px;
+}
