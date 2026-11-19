@@ -56,3 +56,108 @@
   width: 180px;
   height: 180px;
 }
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .slide {
+    position: relative;
+    top: auto;
+    left: auto;
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 320 / 920;
+    overflow: hidden;
+    border-radius: 0;
+    background: #746d68;
+    container-type: inline-size;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  .mobLead,
+  .mobAccent,
+  .mobTail {
+    position: absolute;
+    left: calc(20 / 320 * 100cqw);
+    width: calc(280 / 320 * 100cqw);
+    margin: 0;
+    color: #fff;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .mobLead {
+    top: calc(133 / 320 * 100cqw);
+    font-size: calc(33.21 / 320 * 100cqw);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+  }
+
+  .mobAccent {
+    top: calc(178.93 / 320 * 100cqw);
+    font-size: calc(44.4 / 320 * 100cqw);
+    line-height: 1.09;
+    letter-spacing: -0.01em;
+  }
+
+  .mobTail {
+    top: calc(284.56 / 320 * 100cqw);
+    font-size: calc(23.09 / 320 * 100cqw);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+  }
+
+  .mobPhoto {
+    position: absolute;
+    top: calc(347 / 320 * 100cqw);
+    left: 0;
+    width: 100%;
+    height: calc(407 / 320 * 100cqw);
+    overflow: hidden;
+    border-radius: calc(28 / 320 * 100cqw);
+    background: #a29c9a;
+  }
+
+  .mobPhoto img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobNote {
+    position: absolute;
+    top: calc(18 / 320 * 100cqw);
+    left: calc(20 / 320 * 100cqw);
+    width: calc(204 / 320 * 100cqw);
+    margin: 0;
+    color: #454545;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-size: calc(22 / 320 * 100cqw);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+  }
+
+  .mobStar {
+    position: absolute;
+    top: calc(697 / 320 * 100cqw);
+    left: calc(68 / 320 * 100cqw);
+    z-index: 1;
+    width: calc(180 / 320 * 100cqw);
+    height: calc(180 / 320 * 100cqw);
+  }
+}

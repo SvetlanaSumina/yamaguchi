@@ -73,3 +73,92 @@
   top: 567px;
   left: 906px;
 }
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .slide {
+    position: relative;
+    top: auto;
+    left: auto;
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 320 / 936;
+    overflow: hidden;
+    border-radius: 0;
+    background: #746d68;
+    container-type: inline-size;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  .mobTitle {
+    position: absolute;
+    top: calc(126.31 / 320 * 100cqw);
+    left: calc(20 / 320 * 100cqw);
+    width: calc(280 / 320 * 100cqw);
+    margin: 0;
+    color: #fff;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-size: calc(38.04 / 320 * 100cqw);
+    font-weight: 600;
+    line-height: 1.01;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .mobWeight {
+    top: calc(184 / 320 * 100cqw);
+    left: calc(114.18 / 320 * 100cqw);
+    z-index: 1;
+    padding: calc(7.27 / 320 * 100cqw);
+    border-radius: calc(43.64 / 320 * 100cqw);
+    font-size: calc(20.17 / 320 * 100cqw);
+    line-height: 1.27;
+  }
+
+  .mobGirl {
+    position: absolute;
+    top: calc(197 / 320 * 100cqw);
+    left: 0;
+    width: 100%;
+    height: calc(712 / 320 * 100cqw);
+  }
+
+  .mobStar {
+    position: absolute;
+    top: calc(204 / 320 * 100cqw);
+    left: calc(201 / 320 * 100cqw);
+    z-index: 1;
+    width: calc(99.46 / 320 * 100cqw);
+    height: calc(99.46 / 320 * 100cqw);
+  }
+
+  .mobText {
+    position: absolute;
+    top: calc(765 / 320 * 100cqw);
+    left: calc(20 / 320 * 100cqw);
+    width: calc(280 / 320 * 100cqw);
+    margin: 0;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(15 / 320 * 100cqw);
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    text-align: center;
+    z-index: 1;
+  }
+}

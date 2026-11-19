@@ -1,0 +1,73 @@
+.pill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: calc(100 / 320 * 100cqw);
+  border-radius: calc(60 / 320 * 100cqw);
+  background: #dbdbdb;
+  box-shadow: calc(15.63 / 320 * 100cqw) calc(13.17 / 320 * 100cqw) calc(24.68 / 320 * 100cqw)
+    calc(-4.94 / 320 * 100cqw) rgba(65, 60, 57, 0.21);
+}
+
+.ring {
+  position: absolute;
+  left: calc(14 / 320 * 100cqw);
+  width: calc(76 / 320 * 100cqw);
+  height: calc(76 / 320 * 100cqw);
+  border: calc(2 / 320 * 100cqw) solid #4b4b4b;
+  border-radius: 50%;
+}
+
+.ring.light {
+  top: calc(11 / 320 * 100cqw);
+}
+
+.ring.motor {
+  top: calc(12 / 320 * 100cqw);
+}
+
+.icon {
+  position: absolute;
+}
+
+.icon.light {
+  top: calc(21.99 / 320 * 100cqw);
+  left: calc(27.93 / 320 * 100cqw);
+  width: calc(46.08 / 320 * 100cqw);
+  height: calc(42.87 / 320 * 100cqw);
+}
+
+.icon.motor {
+  top: calc(22.6 / 320 * 100cqw);
+  left: calc(23.36 / 320 * 100cqw);
+  width: calc(56.25 / 320 * 100cqw);
+  height: calc(56.25 / 320 * 100cqw);
+}
+
+.title {
+  position: absolute;
+  margin: 0;
+  color: #625b56;
+  font-family: 'Euclid Circular A', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.title.light {
+  top: calc(16 / 320 * 100cqw);
+  left: calc(105 / 320 * 100cqw);
+  width: calc(135 / 320 * 100cqw);
+  font-size: calc(21.6 / 320 * 100cqw);
+  line-height: calc(22.58 / 21.6);
+}
+
+.title.motor {
+  top: calc(25 / 320 * 100cqw);
+  left: calc(106 / 320 * 100cqw);
+  width: calc(189 / 320 * 100cqw);
+  font-size: calc(16.61 / 320 * 100cqw);
+  line-height: calc(23.89 / 16.61);
+}
