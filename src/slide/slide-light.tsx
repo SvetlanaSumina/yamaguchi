@@ -21,7 +21,7 @@ export const SlideLight = () => {
           лёгкий
         </h2>
         <p className={styles.text}>
-          Уменьшает усталость рук при сушке волос, делая процедуру удобной и приятной даже после
+          Уменьшает усталость рук при&nbsp;сушке&nbsp;волос, делая процедуру удобной и&nbsp;приятной даже после
           напряжённого рабочего дня.
         </p>
         <Badge className={styles.weight} tone="light" size="s">
@@ -42,7 +42,7 @@ export const SlideLight = () => {
         <img className={styles.mobGirl} src={girlMob} alt="" />
         <img className={styles.mobStar} src={starMob} alt="Не тяжелее чашки кофе" />
         <p className={styles.mobText}>
-          Уменьшает усталость рук при сушке волос, делая процедуру удобной и приятной даже после
+          Уменьшает усталость рук при&nbsp;сушке волос, делая процедуру удобной и&nbsp;приятной даже после
           напряжённого рабочего дня.
         </p>
       </div>

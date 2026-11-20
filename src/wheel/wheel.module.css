@@ -127,7 +127,7 @@
   top: 0;
   left: 0;
   width: 188px;
-  color: #fff;
+  color: var(--white);
   font-family: 'Euclid Circular A', sans-serif;
   font-size: 26px;
   font-weight: 600;

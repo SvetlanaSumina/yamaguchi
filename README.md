@@ -1,32 +1,20 @@
-# React + TypeScript + Vite
+# Фен-стайлер
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Три слайда: десктоп и мобилка.
 
-Currently, two official plugins are available:
+## Запуск
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Сборка: `npm run build`. Готовую сборку можно открыть через `npm run preview`.
+
+## Вёрстка
+
+Резиновая вёрстка по ТЗ сделана только до 1024. Мобильный слайд тянется вместе с шириной окна. Десктоп - фиксированный кадр 1920×1440, его сверяют с макетом. На ширине от 1024 до 1919 страница шире окна, появляется горизонтальный скролл.
+
+На десктопе слайды переключаются по скроллу, колесо иконок поворачивается вместе с ними. Клик по иконке открывает её слайд. Ниже 1024 колеса нет, слайды стоят столбиком.
+
+Файла Euclid Circular A в репозитории нет, заголовки идут системным шрифтом. Абзац второго слайда набран Montserrat Medium.

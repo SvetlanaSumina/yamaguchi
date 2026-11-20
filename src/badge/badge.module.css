@@ -9,7 +9,7 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   white-space: nowrap;
-  background: #fff;
+  background: var(--white);
   box-shadow: 15.63px 13.17px 24.68px -4.94px rgba(65, 60, 57, 0.21);
 }
 
@@ -28,6 +28,6 @@
 }
 
 .dark {
-  color: #fff;
+  color: var(--white);
   background: #4b4b4b;
 }
