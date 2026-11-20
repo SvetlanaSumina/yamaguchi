@@ -21,81 +21,111 @@
   stroke-width: 10.97px;
 }
 
-@media (max-width: 1023px) {
-  .wheel,
-  .featherBtn,
-  .motorBtn,
-  .active,
-  .caption {
-    display: none;
-  }
-}
-
-.featherBtn,
-.motorBtn,
-.active {
+.icon {
   position: absolute;
   z-index: 2;
-  border-radius: 50%;
-}
-
-.featherBtn,
-.motorBtn {
-  left: 69.59px;
   width: 74px;
   height: 74px;
+  overflow: hidden;
+  border-radius: 50%;
   background: #746d68;
 }
 
-.featherBtn {
-  top: 573.74px;
-}
-
-.motorBtn {
-  top: 792.74px;
-}
-
 .feather {
+  top: 206.74px;
+  left: 651.59px;
+}
+
+.motor {
+  top: 425.74px;
+  left: 651.59px;
+}
+
+.dryer {
+  top: 301.74px;
+  left: 654.56px;
+}
+
+.icon.current {
+  z-index: 3;
+  width: 103px;
+  height: 103px;
+  background: #dbdbdb;
+}
+
+.idle,
+.on {
   position: absolute;
+  opacity: 0;
+}
+
+.idle {
+  opacity: 1;
+}
+
+.current .idle {
+  opacity: 0;
+}
+
+.current .on {
+  opacity: 1;
+}
+
+.feather .idle {
   top: 10.7px;
   left: 13.57px;
   width: 44.87px;
   height: 41.74px;
 }
 
-.motor {
-  position: absolute;
+.feather .on {
+  top: 24px;
+  left: 19px;
+  width: 65px;
+  height: 55px;
+}
+
+.motor .idle {
   top: 8.5px;
   left: 8.5px;
   width: 57px;
   height: 57px;
 }
 
-.caption {
-  position: absolute;
-  top: 687.24px;
-  left: 193.56px;
-  z-index: 2;
-  width: 188px;
+.motor .on {
+  top: 12px;
+  left: 12px;
+  width: 79px;
+  height: 79px;
 }
 
-.active {
-  top: 668.74px;
-  left: 72.56px;
-  width: 103px;
-  height: 103px;
-  background: #dbdbdb;
+.dryer .idle {
+  top: 15.5px;
+  left: 9px;
+  width: 56px;
+  height: 43px;
 }
 
-.dryer {
-  position: absolute;
+.dryer .on {
   top: 26.82px;
   left: 12.8px;
   width: 77.55px;
   height: 59.5px;
 }
 
+.caption {
+  position: absolute;
+  top: 720.24px;
+  left: 193.56px;
+  z-index: 2;
+  width: 188px;
+  height: 0;
+}
+
 .label {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 188px;
   color: #fff;
   font-family: 'Euclid Circular A', sans-serif;
@@ -105,4 +135,21 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  transform: translateY(-50%);
+}
+
+.motorLabel {
+  width: 264px;
+}
+
+.label.current {
+  visibility: visible;
+}
+
+@media (max-width: 1023px) {
+  .wheel,
+  .caption {
+    display: none;
+  }
 }
