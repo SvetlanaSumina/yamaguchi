@@ -2,6 +2,7 @@
   position: absolute;
   top: 367px;
   left: -582px;
+  z-index: 2;
   width: 706px;
   height: 706px;
 }
@@ -34,6 +35,7 @@
 .motorBtn,
 .active {
   position: absolute;
+  z-index: 2;
   border-radius: 50%;
 }
 
@@ -73,7 +75,7 @@
   position: absolute;
   top: 687.24px;
   left: 193.56px;
-  z-index: 1;
+  z-index: 2;
   width: 188px;
 }
 
